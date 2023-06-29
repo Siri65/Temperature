@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: url(background.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.container {
+    background: transparent;
+    width: 510px;
+    /* height: 373px; */
+    padding: 5px 25px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    box-shadow: 20px 20px 20px rgb(95, 93, 93);
+}
+
+.container h1 {
+    font-family: 'Times New Roman';
+    font-size: 33px;
+    font-weight: 400;
+    text-align: center;
+    user-select: none;
+    letter-spacing: 1px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputs:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inp {
+    display: flex;
+    gap: 10px;
+}
+
+.inp div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+
+#result,
+#inputValue {
+    height: 40px;
+    font-size: 25px;
+    border: 1px solid rgb(8, 8, 8);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+    font-weight: 600;
+    font-family: 'Times New Roman';
+}
+
+#result:focus,
+#inputValue:focus {
+    height: 40px;
+    font-size: 25px;
+    border: 1px solid rgb(3, 3, 3);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+}
+
+#btn {
+    height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(33, 33, 39);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#btn:active {
+    height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(27, 27, 29, 0.603);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.res {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#type1,
+#type2 {
+    height: 41px;
+    font-size: 25px;
+    font-family: 'Times New Roman';
+    border: 1px solid rgb(8, 8, 8);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+}
+
+#type1:focus,
+#type2:focus {
+    height: 41px;
+    font-size: 25px;
+    border: 1px solid rgb(6, 6, 6);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    padding: 0 10px;
+}
+
+label {
+    font-size: 17px;
+    font-family: 'Times New Roman';
+    color:1px solid rgb(4, 4, 4);
+}
+
+.footer {
+    height: 5vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    font-size: 25px;
+    color: aliceblue;
+    font-family: 'Times New Roman';
+}
+
+.footer p span {
+    text-decoration: none;
+    color: rgb(6, 6, 4);
+}
+
+
+@media only screen and (max-width: 575px) {
+    .container {
+        transform: scale(0.95);
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .container {
+        transform: scale(0.8);
+    }
+}

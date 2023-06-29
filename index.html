@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <!--for css tags-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!--box and icons -->
+    <div class="container">
+        <h1></h1>
+        <h1>Temperature Converter</h1>
+        <div class="inputs">
+            <div style="display: flex;
+            flex-direction: column;">
+                <label for="degree">Value: </label>
+                <input type="number" name="degree" id="inputValue" required placeholder="0">
+            </div>
+
+            <div class="inp">
+                <div>
+                    <label for="type">From</label>
+                    <select name="type" id="type1">
+                        <option value="celcius">Celcius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="type">To</label>
+                    <select name="type" id="type2">
+                        <option value="celcius">Celcius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+        <!--convertor button-->
+        <button type="submit" id="btn" onclick="temperature()">Convert</button>
+        <div class="res">
+            <label for="result">Result</label>
+            <div id="result"></div>
+            <h1></h1>
+            <h1></h1>
+        </div>
+    </div>
+
+    <!--footer tag-->
+    <div class="footer">
+        <p>Designed by <span>Mohana Siri Vasamsetty</span> | all rights reserved! </p>
+    </div>
+
+    <!--script file invoking-->
+    <script src="script.js"></script>
+</body>
+</html>
